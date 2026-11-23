@@ -5,16 +5,16 @@ function Home() {
     const [searchQuery, setSearchQuery] = useState(""); 
 
     const movies = [
-        {id:1, title:"Sad-NKO", release_date:"2022"},
-        {id:2, title:"bad-NKO", release_date:"2025"},
-        {id:3, title:"cook-NKO", release_date:"2002"},
-        {id:4, title:"me-NKO", release_date:"2009"}
+        { id:1, title:"Sad-NKO", release_date:"2022" },
+        { id:2, title:"bad-NKO", release_date:"2025" },
+        { id:3, title:"cook-NKO", release_date:"2002" },
+        { id:4, title:"me-NKO", release_date:"2009" }
     ];
 
     const handleSearch = () => {
-        e.preventDafault()
-        alert(searchQuery)
-        setSearchQuery("...")
+        e.preventDafault();
+        alert(searchQuery);
+        setSearchQuery("");
     };
     
     return(
@@ -32,11 +32,12 @@ function Home() {
 
             <div className="movie-grid">
                 {movies.map((movie) => (
-                    <MovieCard movie={movie} key={movies.id} />
-                ))}
+                        <MovieCard movie={movie} key={movies.id} />
+                    )
+                )}
             </div>
         </div>
-    )
+    );
 }
 
 export default Home;
