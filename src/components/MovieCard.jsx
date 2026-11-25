@@ -1,3 +1,5 @@
+import "../css/MoveCard.css";
+
 function MovieCard({movie}) {
 
     function LikeClick() {
