@@ -2,9 +2,12 @@ import "../../css/Favorites.css";
 
 function Favorites() {
     return (
-        <div className="favorite-empty">
-            <h2>No Favorite movies Yet</h2>
-            <h2>Start adding movies to your favorite and they will appear here</h2>
+        <div className="favorites">
+            <div className="favorites-empty">
+                <span className="favorites-empty-icon" aria-hidden="true">♥</span>
+                <h2>No Favorite Movies Yet</h2>
+                <p>Start adding movies to your favorites and they will appear here.</p>
+            </div>
         </div>
     )
 }
